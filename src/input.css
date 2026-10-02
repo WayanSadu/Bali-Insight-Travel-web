@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+.container{
+    @apply w-[94%] 
+}
+
+.container-img{
+    @apply w-[97%] 
+}
+
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+
+.swiper-pagination-bullet{
+  @apply w-[6px] h-[6px] bg-dark rounded-full xl:w-2 xl:h-2 !important
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-[6px] h-[6px] bg-dark xl:w-2 xl:h-2 !important
+}
+
+.name{
+    @apply font-bold text-lg xl:text-2xl
+}
+
+.description{
+    @apply font-medium text-sm opacity-65 xl:text-base 2xl:text-lg
+}
+
+.tag{
+    @apply bg-dark bg-opacity-10 w-fit px-3 py-1 font-semibold text-xs rounded-full xl:text-base xl:py-2 xl:px-5
+}
+
+.hero-title{
+    @apply font-bold text-[45px] leading-tight md:text-[55px] xl:text-8xl xl:leading-tight 2xl:text-[115px]
+}
+
+.btn-primary{
+    @apply flex items-center bg-primary w-fit text-white text-sm font-medium px-6 py-2 rounded-full gap-1 xl:text-base xl:py-4 xl:px-12
+}
+
+.glass-text{
+    @apply font-medium text-sm xl:text-base 2xl:text-lg
+}
+
+.section-title{
+    @apply font-bold text-2xl xl:text-4xl 2xl:text-5xl
+}
+
+.card-title{
+    @apply font-bold text-base line-clamp-1 xl:text-xl
+}
+
+.card-description{
+    @apply font-medium text-sm opacity-65 line-clamp-2 xl:text-base
+}
+
+.tag-category{
+    @apply border border-dark border-opacity-15 text-xs font-medium opacity-65 px-2 py-1 rounded-full 2xl:text-sm 2xl:px-3 2xl:py-2
+}
+
+.btn-secondary{
+    @apply border border-dark border-opacity-20 font-semibold text-sm opacity-65 rounded-full px-4 py-2 hover:bg-primary hover:opacity-100 hover:border-none hover:text-white hover:font-medium duration-500 xl:text-base xl:py-3 xl:px-7
+}
+
+.glass-btn{
+    @apply bg-white bg-opacity-15 backdrop-blur border border-white border-opacity-50 text-white font-semibold text-sm rounded-full px-4 py-2 xl:text-base xl:py-3 xl:px-7
+}
+
+.btn-category{
+    @apply hidden md:flex border border-dark border-opacity-20 w-8 h-8 justify-center items-center rounded-full text-opacity-65 hover:bg-primary hover:border-none hover:text-white duration-500 xl:w-12 xl:h-12 xl:text-xl
+}
+
+.category-title{
+    @apply text-base font-bold xl:text-2xl 2xl:text-3xl
+}
+
+.cta-title{
+    @apply font-bold text-2xl text-center text-white w-[50%] xl:text-4xl 2xl:text-5xl 2xl:w-full
+}
+
+.cta-description{
+    @apply font-medium text-sm w-[60%] xl:text-base xl:w-[55%] 2xl:text-lg
+}
+
+.testi-card{
+    @apply border border-dark border-opacity-10 p-4 flex flex-col gap-3 rounded-md xl:p-5 xl:gap-5 xl:rounded-lg
+}
+
+.star-text{
+    @apply font-semibold text-sm opacity-80 xl:text-base
+}
+
+.testi-description{
+    @apply font-medium text-sm opacity-65 line-clamp-4 xl:text-base
+}
+
+.footer{
+    @apply bg-dark py-5 text-white
+}
+
+.footer-description{
+    @apply font-medium text-xs opacity-65 line-clamp-2 xl:text-base
+}
+
+.footer-title{
+    @apply font-semibold text-sm line-clamp-1 xl:text-xl
+}
+
+.page-title{
+    @apply font-bold text-2xl text-center xl:text-6xl 2xl:text-7xl
+}
+
+.search{
+  @apply font-medium text-xs bg-dark bg-opacity-10 rounded-lg pl-9 py-3 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition duration-200 xl:py-4 xl:text-sm
+}
+
+.category-btn1{
+    @apply border-2 border-dark border-opacity-10 px-3 py-1 rounded-full font-medium text-xs text-center opacity-65 hover:bg-primary hover:border-primary hover:text-white hover:font-semibold hover:opacity-100 duration-500 xl:text-base xl:px-4 xl:py-2 2xl:px-6
+}
+
+.category-btn2{
+    @apply bg-primary px-3 py-1 rounded-full font-semibold text-xs text-center xl:text-base xl:px-4 xl:py-2 2xl:px-6
+}
+
+.category-tag{
+    @apply border-2 border-dark border-opacity-10 px-3 py-1 rounded-full font-medium text-xs text-center opacity-65 w-fit xl:text-base xl:px-4 xl:py-2 2xl:px-6
+}
+
+.status{
+    @apply bg-red-200 px-3 py-2 rounded-md font-medium text-xs text-center text-red-600 w-fit xl:text-base xl:px-4 xl:py-2 2xl:px-6
+}

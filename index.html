@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Funnel+Display:wght@300..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Bali Insight</title>
+    <link rel="icon" type="image/svg" href="/dist/img/logo.svg" />
+  </head>
+
+  <body class="bg-body text-dark">
+    <!-- navbar start -->
+     <header class="bg-transparent top-0 left-0 w-full flex items-center z-50">
+        <div class="border-b border-dark border-opacity-20 w-full flex items-center py-5 xl:border-b-2 xl:border-opacity-10">
+            <div class="container mx-auto flex items-center justify-between relative">
+                <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/logo.svg" alt="" class="w-6 xl:w-7">
+                    <h1 class="name">Bali Insight</h1>
+                </div>
+                <button id="hamburger" type="button" class="z-50 lg:hidden">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+                <nav class="hidden absolute bg-white border border-dark border-opacity-15 text-black right-1 top-14 rounded-md py-2 w-36 px-3 z-50 lg:border-none lg:flex lg:bg-transparent lg:static lg:w-auto" id="nav-menu">
+                    <ul class="">
+                        <li class="flex flex-col lg:flex-row gap-3 lg:gap-4 xl:gap-9">
+                            <a href="index.html" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Home</a>
+                            <a href="about-us.html" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">About Us</a>
+                            <a href="destination.html" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Destination</a>
+                            <a href="#" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Hotel & Villa</a>
+                            <a href="#" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Event</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+     <section class="pt-8 xl:pt-14">
+        <div class="flex flex-col gap-5 xl:gap-11">
+            <div class="container mx-auto flex flex-col gap-1 md:gap-3 xl:gap-5" data-aos="fade-right">
+                <div class="flex flex-col gap-3 xl:gap-5">
+                    <div class="tag"><p>Tourist Information</p></div>
+                    <h1 class="hero-title">Explore Bali with Complete <span class="text-primary font-extrabold">Travel Information.</span></h1>
+                </div>
+                <div class="flex flex-col gap-3 md:flex-row md:items-center md:gap-0 md:justify-between">
+                    <p class="description md:w-[70%] xl:w-[52%] 2xl:w-[50%]">Discover the beauty of Bali through a complete and trusted source of travel information. From cultural festivals and natural destinations to local cuisine and hidden gems.</p>
+                    <a href="#" class="btn-primary">
+                        <p class="">Explore Now</p>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-img mx-auto relative" data-aos="fade-up">
+                <img src="dist/img/hero-img-hp.webp" alt="hero-img-hp" class="w-auto md:hidden">
+                <img src="dist/img/Hero-img.webp" alt="Hero-img" class="hidden md:block 2xl:w-screen">
+                <div class="absolute bottom-3 right-3 w-2/3 md:w-1/2 xl:w-[30%] xl:bottom-5 xl:right-5 2xl:bottom-6 2xl:right-6">
+                    <div class="flex flex-col bg-white bg-opacity-20 backdrop-blur border border-white border-opacity-80 text-white rounded-md gap-1 p-3 xl:gap-3 xl:p-8 xl:rounded-xl">
+                        <h1 class="font-black text-3xl xl:text-5xl xl:font-extrabold">500+</h1>
+                        <p class="glass-text">Curated travel information — from cultural events, natural destinations, local cuisine, all updated in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- hero end -->
+
+    <!-- destination start -->
+     <section class="container mx-auto pt-16 xl:pt-32">
+        <div class="flex flex-col gap-5 xl:gap-12" data-aos="fade-down">
+            <div class="flex flex-col gap-1 lg:gap-0 lg:flex-row lg:justify-between lg:items-end">
+                <h1 class="section-title lg:w-[20%] xl:w-[30%]">Explore Bali's Trending Spots</h1>
+                <p class="description lg:w-[48%] xl:w-[45%] 2xl:w-[42%]">Find out what’s currently capturing travelers’ hearts in Bali. Experience viral destinations filled with nature, culture, and unforgettable photo moments.</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-7 xl:gap-14">
+                <div class="grid grid-cols-2 gap-x-3 gap-y-5 md:grid-cols-4 xl:gap-5">
+                    <a href="destination-detail.html" class="flex flex-col gap-2 xl:gap-4">
+                        <img src="dist/img/destination-1.webp" alt="destination-1" class="w-auto">
+                        <div class="flex flex-col px-1 gap-3 xl:gap-5">
+                            <div class="flex flex-col xl:gap-1">
+                                <h1 class="card-title">Tegalalang Rice Terrace, Ubud</h1>
+                                <p class="card-description">Iconic green rice terraces offering stunning views, serene vibes, and popular swing</p>
+                            </div>
+                            <div class="flex items-center gap-1 2xl:gap-2">
+                                <div class="tag-category"><p>Landscape</p></div>
+                                <div class="tag-category"><p>Nature</p></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col gap-2 xl:gap-4">
+                        <img src="dist/img/destination-2.webp" alt="destination-1" class="w-auto">
+                        <div class="flex flex-col px-1 gap-3 xl:gap-5">
+                            <div class="flex flex-col xl:gap-1">
+                                <h1 class="card-title">Hidden Canyon Beji Guwang</h1>
+                                <p class="card-description">Trekking among rocky cliffs and crystal-clear rivers. An exotic spot and easy</p>
+                            </div>
+                            <div class="flex items-center gap-1 2xl:gap-2">
+                                <div class="tag-category"><p>Nature</p></div>
+                                <div class="tag-category"><p>Adventure</p></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col gap-2 xl:gap-4">
+                        <img src="dist/img/destination-3.webp" alt="destination-1" class="w-auto">
+                        <div class="flex flex-col px-1 gap-3 xl:gap-5">
+                            <div class="flex flex-col xl:gap-1">
+                                <h1 class="card-title">Molenteng Treehouse</h1>
+                                <p class="card-description">A treehouse on a cliff with panoramic blue sea views and spectacular views</p>
+                            </div>
+                            <div class="flex items-center gap-1 2xl:gap-2">
+                                <div class="tag-category"><p>Scenic Spot</p></div>
+                                <div class="tag-category"><p>Nature</p></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col gap-2 xl:gap-4">
+                        <img src="dist/img/destination-4.webp" alt="destination-1" class="w-auto">
+                        <div class="flex flex-col px-1 gap-3 xl:gap-5">
+                            <div class="flex flex-col xl:gap-1">
+                                <h1 class="card-title">Savana Tianyar</h1>
+                                <p class="card-description">A vast grassland with Mount Agung in the background. The scenery changes with</p>
+                            </div>
+                            <div class="flex items-center gap-1 2xl:gap-2">
+                                <div class="tag-category"><p>Hidden Gem</p></div>
+                                <div class="tag-category"><p>Nature</p></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="destination.html" class="btn-secondary">Explore More</a>
+            </div>
+        </div>
+     </section>
+    <!-- destination end -->
+
+    <!-- About Us start -->
+     <section class="container mx-auto pt-16 xl:pt-32">
+        <div class="flex flex-col gap-5 xl:gap-12 2xl:gap-14">
+            <div class="flex flex-col gap-1 lg:gap-0 lg:flex-row lg:justify-between lg:items-end" data-aos="fade-up">
+                <h1 class="section-title lg:w-[22%] xl:w-[28%]">Connecting You to the Heart of Bali</h1>
+                <p class="description lg:w-[48%] xl:w-[41%] 2xl:w-[42%]">Born from a passion for Bali's beauty, we aim to connect travelers with the island's rich culture, nature, and traditions. Discover Bali's authentic side through trusted information curated for every explorer.</p>
+            </div>
+            <div class="flex flex-col md:gap-6 xl:gap-16 2xl:gap-20">
+                <div class="hidden relative md:block" data-aos="zoom-in-up">
+                    <img src="dist/img/landing-about-img.webp" alt="landing-about-img" class="w-screen">
+                    <a href="about-us.html" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glass-btn">Read more</a>
+                </div>
+                <div class="flex flex-wrap items-center gap-6 px-1 md:gap-0 md:justify-between md:px-2 xl:px-4" data-aos="fade-down">
+                    <div class="flex flex-col xl:gap-3">
+                        <h1 class="section-title">600 <span class="text-primary">+</span></h1>
+                        <p class="description">Curated Destinations</p>
+                    </div>
+                    <div class="hidden w-[2px] h-8 bg-dark bg-opacity-15 md:block xl:h-16 xl:bg-opacity-10"></div>
+                    <div class="flex flex-col xl:gap-3">
+                        <h1 class="section-title">120 <span class="text-primary">+</span></h1>
+                        <p class="description">Authentic Culinary Spots</p>
+                    </div>
+                    <div class="hidden w-[2px] h-8 bg-dark bg-opacity-15 md:block xl:h-16 xl:bg-opacity-10"></div>
+                    <div class="flex flex-col xl:gap-3">
+                        <h1 class="section-title">80 <span class="text-primary">+</span></h1>
+                        <p class="description">Cultural and Festival</p>
+                    </div>
+                    <div class="hidden w-[2px] h-8 bg-dark bg-opacity-15 md:block xl:h-16 xl:bg-opacity-10"></div>
+                    <div class="flex flex-col xl:gap-3">
+                        <h1 class="section-title">10K <span class="text-primary">+</span></h1>
+                        <p class="description">monthly visitors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- About Us end -->
+
+    <!-- category information start -->
+     <section class="container mx-auto pt-16 xl:pt-32">
+        <div class="flex flex-col gap-5 xl:gap-20">
+            <div class="flex flex-col gap-1 lg:gap-0 lg:flex-row lg:justify-between lg:items-end" data-aos="fade-down">
+                <h1 class="section-title lg:w-[22%] xl:w-[30%] 2xl:w-[35%]">Explore. Experience. Embrace Bali.</h1>
+                <p class="description lg:w-[48%] xl:w-[30%] 2xl:w-[28%]">Discover stunning destinations, handpicked hotels & villas, and unforgettable cultural events.</p>
+            </div>
+            <div class="flex flex-col gap-5 xl:gap-10">
+                <div class="flex items-center gap-4 md:gap-8 lg:gap-0 lg:w-full lg:justify-between" data-aos="fade-right">
+                    <div class="flex items-center w-[50%] md:w-[40%] lg:gap-5 lg:w-[30%] xl:gap-12">
+                        <p class="hidden font-bold text-base xl:text-xl lg:block">01</p>
+                        <img src="dist/img/category-information-1.webp" alt="category-information-1" class="w-full lg:w-[80%]">
+                    </div>
+                    <div class="flex items-center w-[50%] md:w-full md:justify-between lg:w-[65%]">
+                        <div class="flex flex-col md:w-[85%] xl:gap-3">
+                            <h1 class="category-title">Tourist Destination</h1>
+                            <p class="card-description">Discover Bali's most stunning landscapes — from serene beaches and hidden waterfalls to vibrant cultural villages. Each destination is curated with local insights to help you explore beyond the ordinary.</p>
+                        </div>
+                        <a href="destination.html" class="btn-category">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full h-[1.5px] bg-dark bg-opacity-10" data-aos="fade-right"></div>
+                <div class="flex items-center gap-4 md:gap-8 lg:gap-0 lg:w-full lg:justify-between" data-aos="fade-right">
+                    <div class="flex items-center w-[50%] md:w-[40%] lg:gap-5 lg:w-[30%] xl:gap-12">
+                        <p class="hidden font-bold text-base xl:text-xl lg:block">02</p>
+                        <img src="dist/img/category-information-2.webp" alt="category-information-1" class="w-full lg:w-[80%]">
+                    </div>
+                    <div class="flex items-center w-[50%] md:w-full md:justify-between lg:w-[65%]">
+                        <div class="flex flex-col md:w-[85%] xl:gap-3">
+                            <h1 class="category-title">Hotels & Villas</h1>
+                            <p class="card-description">Find your perfect stay across Bali, whether it’s a luxurious beachfront villa or a cozy boutique hotel. We highlight trusted accommodations with authentic Balinese hospitality.</p>
+                        </div>
+                        <a href="#" class="btn-category">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full h-[1.5px] bg-dark bg-opacity-10" data-aos="fade-right"></div>
+                <div class="flex items-center gap-4 md:gap-8 lg:gap-0 lg:w-full lg:justify-between" data-aos="fade-right">
+                    <div class="flex items-center w-[50%] md:w-[40%] lg:gap-5 lg:w-[30%] xl:gap-12">
+                        <p class="hidden font-bold text-base xl:text-xl lg:block">03</p>
+                        <img src="dist/img/category-information-3.webp" alt="category-information-1" class="w-full lg:w-[80%]">
+                    </div>
+                    <div class="flex items-center w-[50%] md:w-full md:justify-between lg:w-[65%]">
+                        <div class="flex flex-col md:w-[85%] xl:gap-3">
+                            <h1 class="category-title">Local Events & Festivals</h1>
+                            <p class="card-description">Discover Bali’s most stunning landscapes — from serene beaches and hidden waterfalls to vibrant cultural villages. Each destination is curated with local insights to help you explore beyond the ordinary.</p>
+                        </div>
+                        <a href="#" class="btn-category">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- category information end -->
+
+    <!-- CTA start -->
+     <section class="container-img mx-auto pt-16 xl:pt-32">
+        <div class="relative" data-aos="zoom-in-up">
+            <img src="dist/img/CTA-img-hp.webp" alt="CTA" class="w-auto md:hidden">
+            <img src="dist/img/CTA-img.webp" alt="CTA" class="hidden w-screen md:block">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+                <div class="flex flex-col items-center justify-center gap-5 xl:gap-7">
+                    <div class="flex flex-col items-center justify-center lg:gap-1 xl:gap-3">
+                        <h1 class="cta-title">Your Trusted Guide to Explore Bali</h1>
+                        <p class="hidden cta-description text-center text-white md:block">Find the best of Bali — from stunning destinations and relaxing stays to lively cultural events. Explore the island with confidence through reliable and inspiring travel information.</p>
+                    </div>
+                    <a href="#" class="glass-btn">Start Exploring</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- CTA start -->
+
+    <!-- testimoni -->
+     <section class="container mx-auto pt-16 xl:pt-32">
+        <div class="flex flex-col gap-5 xl:gap-12 2xl:gap-14" data-aos="fade-right">
+            <div class="flex flex-col gap-1 lg:gap-0 lg:flex-row lg:justify-between lg:items-end">
+                <h1 class="section-title lg:w-[20%] xl:w-[30%]">What Travelers Say About Bali Insight</h1>
+                <p class="description lg:w-[48%] xl:w-[45%] 2xl:w-[42%]">Hear from explorers who’ve experienced the island through our lens. Their stories reflect the beauty, warmth, and unforgettable charm of Bali.</p>
+            </div>
+            <div class="swiper mySwiper w-[100%] h-full">
+                <div class="swiper-wrapper mb-12 md:mb-16 xl:mb-20">
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="flex flex-col gap-2 xl:gap-4">
+                                <div class="flex items-center gap-1 2xl:gap-2">
+                                    <i class="ri-star-fill text-star text-sm"></i>
+                                    <p class="star-text">8.0</p>
+                                </div>
+                                <p class="testi-description">“This website made planning my Bali trip so easy! I found hidden beaches and cultural events I never saw on other travel sites.”</p>
+                            </div>
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <img src="dist/img/testimoni-1.webp" alt="testimoni-img" class="w-9 xl:w-11">
+                                <div class="flex flex-col">
+                                    <h1 class="card-title">Maya Anna</h1>
+                                    <p class="testi-description">The traveler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="flex flex-col gap-2 xl:gap-4">
+                                <div class="flex items-center gap-1 2xl:gap-2">
+                                    <i class="ri-star-fill text-star text-sm"></i>
+                                    <p class="star-text">8.0</p>
+                                </div>
+                                <p class="testi-description">“I love how this site combines detailed destination info with real local insights. It helped me discover places perfect for photography.”</p>
+                            </div>
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <img src="dist/img/testimoni-2.webp" alt="testimoni-img" class="w-9 xl:w-11">
+                                <div class="flex flex-col">
+                                    <h1 class="card-title">Emily Chen</h1>
+                                    <p class="testi-description">Travel Blogger</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="flex flex-col gap-2 xl:gap-4">
+                                <div class="flex items-center gap-1 2xl:gap-2">
+                                    <i class="ri-star-fill text-star text-sm"></i>
+                                    <p class="star-text">8.0</p>
+                                </div>
+                                <p class="testi-description">“Clear, reliable, and beautifully designed. I used it to find great villas and cultural festivals happening during my stay everything worked!”</p>
+                            </div>
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <img src="dist/img/testimoni-3.webp" alt="testimoni-img" class="w-9 xl:w-11">
+                                <div class="flex flex-col">
+                                    <h1 class="card-title">Jonathan Kana</h1>
+                                    <p class="testi-description">The Visitor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="flex flex-col gap-2 xl:gap-4">
+                                <div class="flex items-center gap-1 2xl:gap-2">
+                                    <i class="ri-star-fill text-star text-sm"></i>
+                                    <p class="star-text">8.0</p>
+                                </div>
+                                <p class="testi-description">“Finally, a platform that truly showcases Bali’s authentic beauty. The information about destinations and local traditions is accurate.”</p>
+                            </div>
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <img src="dist/img/testimoni-4.webp" alt="testimoni-img" class="w-9 xl:w-11">
+                                <div class="flex flex-col">
+                                    <h1 class="card-title">Dewa Putra</h1>
+                                    <p class="testi-description">Local Guide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="flex flex-col gap-2 xl:gap-4">
+                                <div class="flex items-center gap-1 2xl:gap-2">
+                                    <i class="ri-star-fill text-star text-sm"></i>
+                                    <p class="star-text">8.0</p>
+                                </div>
+                                <p class="testi-description">“This website made planning my Bali trip so easy! I found hidden beaches and cultural events I never saw on other travel sites.”</p>
+                            </div>
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <img src="dist/img/testimoni-1.webp" alt="testimoni-img" class="w-9 xl:w-11">
+                                <div class="flex flex-col">
+                                    <h1 class="card-title">Maya Anna</h1>
+                                    <p class="testi-description">The traveler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+     </section>
+    <!-- testimoni -->
+
+    <!-- footer -->
+     <section class="pt-16 xl:pt-32">
+        <div class="footer">
+            <div class="container mx-auto flex flex-col gap-7 pt-6 md:flex-row md:gap-0 md:justify-between xl:py-14">
+                <div class="flex flex-col md:justify-between">
+                    <div class="flex items-center gap-2 xl:gap-4">
+                        <img src="dist/img/logo-white.svg" alt="" class="w-6 xl:w-7">
+                        <h1 class="name">Bali Insight</h1>
+                    </div>
+                    <div class="hidden md:flex">
+                        <p class="footer-description">© 2025 AnjayTeam. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-x-16 gap-y-6 md:gap-20 lg:gap-28 xl:gap-36 2xl:gap-52">
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="footer-title">Quick Links</h1>
+                        <div class="flex flex-col gap-3 xl:gap-4">
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">Home</a>
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">About Us</a>
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">Destination</a>
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">Hotel & Villa</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="footer-title">Social media</h1>
+                        <div class="flex flex-col gap-3 xl:gap-4">
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Instagram</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Facebook</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Youtube</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Tiktok</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="footer-title">Contact Us</h1>
+                        <div class="flex flex-col gap-3 xl:gap-4">
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">+123-456-789</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">BaliInsight@gmail.com</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Help & FAQ</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <p class="footer-description">© 2025 AnjayTeam. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Funnel+Display:wght@300..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Bali Insight</title>
+    <link rel="icon" type="image/svg" href="/dist/img/logo.svg" />
+  </head>
+
+  <body class="bg-body text-dark">
+    <!-- navbar start -->
+     <header class="bg-transparent top-0 left-0 w-full flex items-center z-50">
+        <div class="border-b border-dark border-opacity-20 w-full flex items-center py-5 xl:border-b-2 xl:border-opacity-10">
+            <div class="container mx-auto flex items-center justify-between relative">
+                <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/logo.svg" alt="" class="w-6 xl:w-7">
+                    <h1 class="name">Bali Insight</h1>
+                </div>
+                <button id="hamburger" type="button" class="z-50 lg:hidden">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+                <nav class="hidden absolute bg-white border border-dark border-opacity-15 text-black right-1 top-14 rounded-md py-2 w-36 px-3 z-50 lg:border-none lg:flex lg:bg-transparent lg:static lg:w-auto" id="nav-menu">
+                    <ul class="">
+                        <li class="flex flex-col lg:flex-row gap-3 lg:gap-4 xl:gap-9">
+                            <a href="index.html" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Home</a>
+                            <a href="about-us.html" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">About Us</a>
+                            <a href="destination.html" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Destination</a>
+                            <a href="#" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Hotel & Villa</a>
+                            <a href="#" class="description hover:text-primary hover:opacity-100 hover:font-semibold duration-200">Event</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+    <!-- navbar end -->
+
+    <!-- content -->
+     <section class="pt-8 xl:pt-10">
+        <div class="flex flex-col gap-4 lg:gap-5 xl:gap-12" data-aos="fade-down">
+            <img src="dist/img/Tegalalang-detail-img.webp" alt="Tegalalang-detail-img" class="container-img mx-auto">
+            <div class="container mx-auto flex flex-col gap-6 lg:flex-row lg:gap-0 lg:justify-between">
+                <div class="flex flex-col gap-4 xl:gap-12">
+                    <div class="flex flex-wrap gap-2 items-center w-[70%]">
+                        <div class="category-tag">Nature</div>
+                        <div class="category-tag">Landscape</div>
+                        <div class="category-tag">Adventure</div>
+                    </div>
+                    <div class="flex items-start gap-5 flex-wrap lg:flex-col xl:gap-12">
+                        <div class="flex flex-col gap-2 xl:gap-3">
+                            <h1 class="card-title">Current status</h1>
+                            <div class="status">Moderately Busy</div>
+                        </div>
+                        <div class="flex flex-col gap-2 xl:gap-3">
+                            <h1 class="card-title">Opening Hours</h1>
+                            <p class="card-description">06.00 – 18.00 WITA</p>
+                        </div>
+                        <div class="flex flex-col gap-2 xl:gap-3">
+                            <h1 class="card-title">Location</h1>
+                            <p class="card-description">Tegallalang, Gianyar, Bali, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 lg:w-[80%] xl:gap-10 xl:w-[70%]">
+                    <div class="flex flex-col gap-2 xl:gap-5">
+                        <h1 class="section-title">Tegalalang Rice Terrace, Ubud</h1>
+                        <p class="description">Tegalalang Rice Terrace is one of Ubud's natural tourist icons, renowned for its stunning views of rice terraces. The landscape showcases the beauty of the traditional Balinese irrigation system called Subak, which has been recognized as a UNESCO World Heritage Site. Tourists can stroll among the rice paddies, take photos at popular spots like the "Love Bali Swing," or enjoy the rural atmosphere while sipping coffee at a cafe overlooking the expansive greenery.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h1 class="card-title">Entrance Fee</h1>
+                        <div class="flex flex-col gap-2 lg:flex-row lg:gap-4 xl:gap-6">
+                            <p class="description">Domestic visitors: <span class="opacity-100">Rp 15,000 – Rp 25,000</span></p>
+                            <p class="description">Domestic visitors: <span class="opacity-100">Rp 15,000 – Rp 25,000</span></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="card-title">Photo / Gallery</h1>
+                        <div class="flex flex-wrap gap-2 xl:gap-3">
+                            <img src="dist/img/galeri-1.webp" alt="galeri-1" class="w-24 xl:w-28">
+                            <img src="dist/img/galeri-2.webp" alt="galeri-1" class="w-24 xl:w-28">
+                            <img src="dist/img/galeri-3.webp" alt="galeri-1" class="w-24 xl:w-28">
+                            <img src="dist/img/galeri-4.webp" alt="galeri-1" class="w-24 xl:w-28">
+                            <img src="dist/img/galeri-5.webp" alt="galeri-1" class="w-24 xl:w-28">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- content -->
+
+    <!-- CTA start -->
+     <section class="container-img mx-auto pt-16 xl:pt-32">
+        <div class="relative" data-aos="zoom-in-up">
+            <img src="dist/img/CTA-img-hp.webp" alt="CTA" class="w-auto md:hidden">
+            <img src="dist/img/CTA-img.webp" alt="CTA" class="hidden w-screen md:block">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+                <div class="flex flex-col items-center justify-center gap-5 xl:gap-7">
+                    <div class="flex flex-col items-center justify-center lg:gap-1 xl:gap-3">
+                        <h1 class="cta-title">Your Trusted Guide to Explore Bali</h1>
+                        <p class="hidden cta-description text-center text-white md:block">Find the best of Bali — from stunning destinations and relaxing stays to lively cultural events. Explore the island with confidence through reliable and inspiring travel information.</p>
+                    </div>
+                    <a href="#" class="glass-btn">Start Exploring</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- CTA start -->
+
+    <!-- footer -->
+     <section class="pt-2 xl:pt-7">
+        <div class="footer">
+            <div class="container mx-auto flex flex-col gap-7 pt-6 md:flex-row md:gap-0 md:justify-between xl:py-14">
+                <div class="flex flex-col md:justify-between">
+                    <div class="flex items-center gap-2 xl:gap-4">
+                        <img src="dist/img/logo-white.svg" alt="" class="w-6 xl:w-7">
+                        <h1 class="name">Bali Insight</h1>
+                    </div>
+                    <div class="hidden md:flex">
+                        <p class="footer-description">© 2025 AnjayTeam. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-x-16 gap-y-6 md:gap-20 lg:gap-28 xl:gap-36 2xl:gap-52">
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="footer-title">Quick Links</h1>
+                        <div class="flex flex-col gap-3 xl:gap-4">
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">Home</a>
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">About Us</a>
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">Destination</a>
+                            <a href="index.html" class="footer-description hover:opacity-100 duration-500">Hotel & Villa</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="footer-title">Social media</h1>
+                        <div class="flex flex-col gap-3 xl:gap-4">
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Instagram</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Facebook</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Youtube</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Tiktok</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 xl:gap-5">
+                        <h1 class="footer-title">Contact Us</h1>
+                        <div class="flex flex-col gap-3 xl:gap-4">
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">+123-456-789</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">BaliInsight@gmail.com</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Help & FAQ</a>
+                            <a href="#" class="footer-description hover:opacity-100 duration-500">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <p class="footer-description">© 2025 AnjayTeam. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, });
+    </script>
+  </body>
+</html>
